@@ -380,18 +380,18 @@ pdfborder=001, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}  % ä¿
 \makeatother%
 
 % No page number environment for appendix
-% \newenvironment{nopagenumber}{%
-%     \titleformat{\chapter}[hang]{\textchapterfont}{}{1em}{} %
-%     \setcounter{secnumdepth}{0}%
-%     \addtocontents{toc}{%
-% 	\protect\setcounter{tocdepth}{0}%
-% 	\protect\pagenumberfalse%
-% 	\ignorespaces}}{%
-%     \setcounter{secnumdepth}{3}%
-%     \addtocontents{toc}{%
-%     \protect\setcounter{tocdepth}{3}%
-% 	\protect\pagenumbertrue%
-%     \ignorespaces}}
+\newenvironment{nopagenumber}{%
+    \titleformat{\chapter}[hang]{\textchapterfont}{}{1em}{} %
+    \setcounter{secnumdepth}{0}%
+    \addtocontents{toc}{%
+	\protect\setcounter{tocdepth}{0}%
+	\protect\pagenumberfalse%
+	\ignorespaces}}{%
+    \setcounter{secnumdepth}{3}%
+    \addtocontents{toc}{%
+    \protect\setcounter{tocdepth}{3}%
+	\protect\pagenumbertrue%
+    \ignorespaces}}
 % List environment config
 \usepackage[inline]{enumitem}
 % Uncomment the two lines below if you want an list environment to share the same indent with a paragraph and no extra blank before, in or after the list.
